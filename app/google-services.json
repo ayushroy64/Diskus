@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "555080027203",
+    "firebase_url": "https://diskus-9c4f6.firebaseio.com",
+    "project_id": "diskus-9c4f6",
+    "storage_bucket": "diskus-9c4f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555080027203:android:6de5123da69d9c42",
+        "android_client_info": {
+          "package_name": "com.example.diskus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555080027203-dvlrsh9nqsckp1bg0m6m5ghf8j4e3hal.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diskus",
+            "certificate_hash": "7ecfdbac35cfc02a7643086c031d2f6c335d6058"
+          }
+        },
+        {
+          "client_id": "555080027203-mq2jqu0le3llkoqv2uktljjqsu6qsf3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVOTZu2qbrLzftP70DcdjyRt96DyXXH6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555080027203-mq2jqu0le3llkoqv2uktljjqsu6qsf3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

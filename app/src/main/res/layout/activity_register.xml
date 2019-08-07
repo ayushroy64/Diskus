@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#223"
+    android:paddingStart="35dp"
+    android:paddingEnd="35dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/small_round"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISKUS"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:fontFamily="serif-monospace"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:id="@+id/email_ed_register"
+                android:textColor="#C5CEF7"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:id="@+id/password_ed_register"
+                android:textColor="#C5CEF7"
+                android:inputType="textPassword"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:id="@+id/name_ed_register"
+                android:textColor="#C5CEF7"
+                android:inputType="text"/>
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:background="#223"
+                android:text="Sign Up"
+                android:onClick="RegisterNewUser"
+                android:id="@+id/signUp"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="#969DD1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="gotoLogin"
+                    android:text="   Login"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="#ffff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="#969dd1"
+            android:visibility="gone"
+            android:id="@+id/progressBarRegister"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
